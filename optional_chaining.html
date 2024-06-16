@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    //orçamento pessoal
+    let obj ={
+        2021: {
+            janeiro: {
+                pessoal: 2000,
+                casa: 1500,
+                investimento: 1000
+            },
+            fevereiro: {
+            pessoal: 1800,
+            casa: 1600,
+            investimento: 800
+            }
+
+        }
+    }
+    /*
+    if(console.log(obj['2021'].marco)){
+        console.log(obj['2021'].marco.pessoal)}*/
+
+    // O ponto de ? faz o processo do if retornando o valor undefined ou o valor contido na variável e não quebra a aplicação, dessa forma tornando o código menos verboso
+    console.log(obj['2021'].dezembro?.pessoal)
+    console.log('teste')
+    
+
+</script>
+</html>
