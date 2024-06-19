@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    let v1 = 10
+    let v2 = null //nula  -> null ou undefined
+
+    //logicas nullish assignment ??= Atribuição lógic a nula
+    v1 ??= 50
+    v2 ??= 100
+    
+
+    console.log(v1 , "Valor não atribuído, pois a variável não possuí um valor nulo ou undefined")
+    console.log(v2, "Valor atribuido, pois a variável esta definida com null")
+
+    //---------------------------------
+
+    let carro = {
+        marca: 'Volkwagen',
+        modelo: 'Jetta'
+    }
+
+    carro.marca ??= 'Volkswagen'
+    carro.modelo ??= 'Golf'
+    carro.ano ??= 2023
+
+    console.log(carro)
+
+    //---------------------------------
+
+    let arr = ['uva', 'Lucas', null, undefined, 5, []]
+
+    arr.forEach((item, indice) => {
+        arr[indice] ??= '<não informado>'
+    })
+
+    console.log(arr)
+
+
+</script>
+</html>

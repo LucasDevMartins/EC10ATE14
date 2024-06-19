@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    //nula  -> null ou undefined
+    //false -> null, undefined, 0, ''
+    let v1 = 10
+    let v2 = null //false
+    let v3 = undefined //false
+    let v4 = 0 //false
+    let v5 = '' //false
+    let v6 = 'Uma string'
+
+    //logicas or assignment ||= Atribuição lógica  nula
+    v1 ||= 50
+    v2 ||= 100
+    v3 ||= 200
+    v4 ||= 300
+    v5 ||= 400
+    v6 ||= 500
+    
+
+    console.log(v1 , "Valor não atribuído, pois a variável não é false")
+    console.log(v2, "Valor atribuido, pois a variável é false")
+    console.log(v3, "Valor atribuido, pois a variável é false")
+    console.log(v4, "Valor atribuido, pois a variável é false")
+    console.log(v5, "Valor atribuido, pois a variável é false")
+    console.log(v6, ", Valor não atribuído, pois a variável não é false")
+
+    
+
+
+</script>
+</html>
