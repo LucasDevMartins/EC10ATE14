@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+
+            class Filme {
+                static proximoIdFilme = 1; //2 , 3;
+
+                constructor(titulo) {
+                    this.titulo = titulo
+
+                    this.id = Filme.proximoIdFilme
+                    Filme.proximoIdFilme++ //incremento
+                }
+
+                static getProximoIdFilme() {
+                    return Filme.proximoIdFilme
+                }
+            }
+
+
+            console.log(Filme.getProximoIdFilme())
+
+            const filme1 = new Filme ('O pior vizinho do mundo') // 1
+            const filme2 = new Filme ('A espera de um milagre') //2
+            const filme3 = new Filme ('Divertidamento 2') //3
+            console.log(filme1)
+            console.log(filme2)
+            console.log(filme3)
+
+            console.log(Filme.getProximoIdFilme()) //4
+            /*
+            class Funcionario {
+                departamento = 'RH'
+                salario = 5300.55
+                static #primeiroNome = 'Lucas'
+                static #ultimoNome = 'Martins'
+
+                static #nomeCompleto() {
+                    return `${this.#primeiroNome} ${this.#ultimoNome}`
+                }
+
+                static showNome() {
+                    return this.#nomeCompleto()
+                }
+            }
+            /*
+            const funcionario = new Funcionario() 
+            console.log(funcionario)
+            console.log(funcionario.showNome())
+            //funcionario._primeiroNome = 'Kelly'
+            //console.log(funcionario._nomeCompleto())
+            
+            console.log(Funcionario.showNome())
+            */
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+
+            class Funcionario {
+                departamento = 'RH'
+                salario = 5300.55
+                #primeiroNome = 'Lucas'
+                #ultimoNome = 'Martins'
+
+                #nomeCompleto() {
+                    return `${this.#primeiroNome} ${this.#ultimoNome}`
+                }
+
+                showNome() {
+                    return this.#nomeCompleto()
+                }
+            }
+
+            const funcionario = new Funcionario() 
+            console.log(funcionario)
+            console.log(funcionario.showNome())
+            //funcionario._primeiroNome = 'Kelly'
+            //console.log(funcionario._nomeCompleto())
+
+        </script>
+    </body>
+</html>
