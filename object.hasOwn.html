@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+
+            class Pessoa {
+                id = null;
+            }
+
+            class PessoaFisica extends Pessoa {
+                nome = 'Lucas Martins'
+            }
+
+            class PessoaJuridica extends Pessoa {
+                razaoSocial = 'Web Developer'
+            }
+
+            const pessoaFisica = new PessoaFisica();
+            const pessoaJuridica = new PessoaJuridica()
+
+            //console.log(pessoaFisica, pessoaJuridica)
+
+            console.log(Object.hasOwn(pessoaFisica, 'id'))
+            console.log(Object.hasOwn(pessoaFisica, 'nome'))
+
+            console.log(Object.hasOwn(pessoaJuridica, 'id'))
+            console.log(Object.hasOwn(pessoaJuridica, 'nome'))
+
+        </script>
+    </body>
+</html>
